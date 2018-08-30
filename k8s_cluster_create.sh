@@ -10,3 +10,11 @@ kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.4 --port:8080
 
 
 #kops delete cluster miksonx.com --state=s3://kops-state-miksonx --yes
+
+#kubectl expose pod <pod> --port=444 --name=frontend
+
+#kubectl port-forward <pod> 8080
+
+#kubectl label pods <pod> mylabel = awesome
+
+#kubectl run -i --tty busybox --image=busybox --restart=Never -- sh
